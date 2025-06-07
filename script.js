@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const dy = mouseY - centerY;
   
         const distance = Math.sqrt(dx * dx + dy * dy);
-        const maxMove = 50;
+        const maxMove = 100;
   
         let moveX = dx;
         let moveY = dy;
