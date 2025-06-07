@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emoji</title>
+  <style>
+    .image-container {
+      position: relative;
+      width: 60vw; /* tamaño del emoji (ajustable) */
+      margin: 0 auto;
+    }
+
+    .emoji_sin_ojos {
+      width: 100%;
+      display: block;
+    }
+
+    .ojo_derecho, .ojo_izquierdo {
+      position: absolute;
+      width: 8%; /* relativo al emoji */
+    }
+
+    .ojo_derecho {
+      top: 33%;
+      left: 64%;
+    }
+
+    .ojo_izquierdo {
+      top: 33%;
+      left: 27%;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="emoji.jpg" class="emoji_sin_ojos">
+    <img id="right_eye" src="ojo.png" class="ojo_derecho">
+    <img id="left_eye" src="ojo.png" class="ojo_izquierdo">
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
